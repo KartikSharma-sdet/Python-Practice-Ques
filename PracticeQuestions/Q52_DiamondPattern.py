@@ -1,5 +1,17 @@
 import Input_Keywords.input as input
 
+# Enter length : 5
+#
+#     *
+#    ***
+#   *****
+#  *******
+# *********
+#  *******
+#   *****
+#    ***
+#     *
+
 def diamondPattern():
 
     levels = input.inputLength()

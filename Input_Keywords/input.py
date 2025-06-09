@@ -49,3 +49,27 @@ def inputLength() -> int:
 def encrypt_decrypt() -> str:
     String = input("What to do ? : encrypt or decrypt : ")
     return String
+
+def inputFloat() -> float:
+    flt = float(input("Enter any float value: "))
+    return flt
+
+def inputListOfString() -> list:
+    length = int(input("Enter the length of the list : "))
+
+    list = []
+
+    for i in range(length):
+        temp = input(f"Enter index {i} element for the list : ")
+        list.append(temp)
+    return list
+
+def inputJewelsAndStones() -> int:
+
+    jewels = input("Enter the Jewels : ")
+    stones = input("Enter the Stones : " )
+
+    return jewels,stones
+
+
+

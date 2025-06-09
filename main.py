@@ -2,26 +2,26 @@ def fibonacci() :
     target = input("Enter the final number : ")
     print(type(float(target)))
 
-    # if(target.isdigit()):
-    #     a = 0
-    #     b = 1
-    #     c = 0
-    #     print(a)
-    #     target = int(target)
-    #
-    #     i = 1
-    #
-    #     while (i < target):
-    #         c = a + b
-    #         a = b
-    #         b = c
-    #         print(a)
-    #         i += 1
-    # elif (target.isalpha()):
-    #     print(f"You have entered {target} which is an alphabet, please enter a number")
-    # else :
-    #     print(f"You have entered {target} which is a special character or a decimal, please enter a number")
-    #
+    if(target.isdigit()):
+        a = 0
+        b = 1
+        c = 0
+        print(a)
+        target = int(target)
+
+        i = 1
+
+        while (i < target):
+            c = a + b
+            a = b
+            b = c
+            print(a)
+            i += 1
+    elif (target.isalpha()):
+        print(f"You have entered {target} which is an alphabet, please enter a number")
+    else :
+        print(f"You have entered {target} which is a special character or a decimal, please enter a number")
+
 
 
 def func1():

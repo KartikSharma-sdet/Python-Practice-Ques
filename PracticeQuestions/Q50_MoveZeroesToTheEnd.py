@@ -18,9 +18,9 @@ def moveZeroes():
             if j != i:
                 list[j] = 0
             i += 1
-
         j += 1
 
     print(f"The new list is {list}")
 
 moveZeroes()
+

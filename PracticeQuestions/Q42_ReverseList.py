@@ -1,6 +1,6 @@
 import Input_Keywords.input as input
 
-# Q Reverse list without using any other data structure
+# Reverse list without using any other data structure
 
 def reverseList():
 
