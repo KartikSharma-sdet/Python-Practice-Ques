@@ -71,5 +71,37 @@ def inputJewelsAndStones() -> int:
 
     return jewels,stones
 
+def inputDictionary(length) -> dict:
 
+    dict = {}
+
+    for i in range(0, length):
+        key = input(f"Enter key for index {i} pair: ")
+        value = input(f"Enter value for index {i} pair: ")
+        dict[key] = value
+
+    return dict
+
+def inputSentence() -> str :
+
+    s = input("Enter a sentence : ")
+
+    return s
+
+def inputName() -> str :
+
+    s = input("Enter a name : ")
+
+    return s
+
+def inputBid() -> int :
+
+    s = int(input("Enter a bid : "))
+
+    return s
+
+def inputYesOrNo() -> str:
+
+    check = input("Enter 'yes' or 'no' : ")
+    return check
 
