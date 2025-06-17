@@ -105,3 +105,13 @@ def inputYesOrNo() -> str:
     check = input("Enter 'yes' or 'no' : ")
     return check
 
+def inputListWithString() -> list:
+    length = int(input("Enter the length of the list : "))
+
+    list = []
+
+    for i in range(length):
+        temp = input(f"Enter index {i} element for the list : ")
+        list.append(temp)
+    return list
+
