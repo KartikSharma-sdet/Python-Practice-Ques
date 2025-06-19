@@ -8,7 +8,7 @@ def decimalToBinary():
 
     if decimalNum == 0:
         print("0")
-        return "0"
+        return
 
     while decimalNum > 0:
         bit = decimalNum % 2

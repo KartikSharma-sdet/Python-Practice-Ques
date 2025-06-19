@@ -136,24 +136,39 @@ def Q6divBy3And5():
             if i % 30 != 0:
                 print(i)
 
+print(ord("0"), ord("9"), ord("A"), ord("Z"), ord("a"), ord("z"))
 
-def Q8rotatedList():
 
-    length = input.inputLength()
-    list1 = input.inputListWithoutLength(length)
-    list2 = input.inputListWithoutLength(length)
-    listNew = []
+def first100NumbersWithoutLoop(n):
+    if n<100:
+        print(n, end=" ")
+    else : return
 
-    start = list2.index(list1[0])
+    first100NumbersWithoutLoop(n+1)
 
-    for i in range(start, len(list2)):
-        listNew.append(list2[i])
 
-    for i in range(0, start):
-        listNew.append(list2[i])
+# list(map(print, range(1, 101)))
 
-    print(list1)
-    print(list2)
-    print(listNew)
-    print(list1 == listNew)
+# s = "fedcba"
+# s1 = s[::-1]
+#
+# print(s1)
 
+def first100NumberInReverse(n):
+    if n > 100:
+        return
+    first100NumberInReverse(n+1)
+    print(n)
+
+def joinFunction():
+    string = input.inputString()
+
+    list = string.split(" ")
+
+    newString = "-".join(list)
+
+    print(newString)
+
+string = "abcdef"
+
+print(string.join(["1","2","3","4","5","6"]))

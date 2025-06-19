@@ -20,5 +20,3 @@ def primeNumber():
                 break
     if count == 0:
         print(f"{num} is a prime number")
-
-primeNumber()
