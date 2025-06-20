@@ -190,7 +190,7 @@ def triangleOfPrimeNumbers():
         print()
 
 
-def reverseWordInSentence():
+def reverseWordInSentenceWithoutUsingSplit():
 
     string = input.inputString()
 
@@ -242,6 +242,3 @@ def rotateAListBykSteps():
         res.append(list[i])
 
     print(res)
-
-
-

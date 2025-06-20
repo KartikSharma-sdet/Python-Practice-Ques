@@ -35,25 +35,20 @@ def Q2count7():
 
     print(count)
 
-def Q3firstNonRepeatingChar():
 
-    string = input.inputString()
-    dict = {}
+def printOccurance():
+    list1 = [1, 2, 4, 2, 3, 1, 6]
+    dict1 = {}
 
-    result = -1
+    for element in list1:
+        if element in dict1.keys():
+            dict1[element] += 1
+        else:
+            dict1[element] = 1
+    print(dict1)
 
-    for char in string:
-        if char in dict.keys():
-            dict[char] += 1
-        else :
-            dict[char] = 1
 
-    for key in dict:
-        if dict[key] == 1:
-            result = key
-            break
-
-    print(result)
+printOccurance()
 
 def Q4isPalindrome():
 
@@ -79,20 +74,19 @@ def Q5swapFirstAndLast():
 
     print(list)
 
+# Print All Digits of a Number in Reverse Order (One per Line)
 
-def Q7removeDuplicates():
+def printAllDigitsInReverse():
 
-    list = input.inputList()
+    num = input.inputInteger()
+    n = num
 
-    list2 = []
+    while n > 0:
+        temp = n%10
+        n = n//10
+        print(temp)
 
-    for num in list:
-        if num in list2:
-            continue
-        else:
-            list2.append(num)
-
-    print(list2)
+printAllDigitsInReverse()
 
 def Q9sumOfDigits():
 
@@ -111,22 +105,8 @@ def Q9sumOfDigits():
 
     print(sum)
 
+# Print All Digits of a Number in Reverse Order (One per Line)
 
-def Q10secondMax():
-
-    list = input.inputList()
-    max = list[0]
-    max2 = list[0]
-
-    for num in list:
-
-        if num > max:
-            max2 = max
-            max = num
-        elif num > max2 and num < max:
-            max2 = num
-
-    print(max2)
 
 
 def Q6divBy3And5():
@@ -172,3 +152,17 @@ def joinFunction():
 string = "abcdef"
 
 print(string.join(["1","2","3","4","5","6"]))
+
+
+#  Count Characters Without Using len()
+
+def length():
+
+    s = input.inputString()
+    count = 0
+
+    for char in s:
+        count += 1
+
+    print(count)
+

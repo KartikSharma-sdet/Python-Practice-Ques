@@ -26,5 +26,7 @@ class Stack:
 
 stack = Stack()
 
+
+
 stack.push("a")
 print(stack.peek())
